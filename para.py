@@ -66,7 +66,7 @@ base_params = {
 def objective(trial):
     # 设置待优化参数
     params = {
-        'iterations': trial.suggest_int('iterations', 500, 2000),
+        'iterations': trial.suggest_int('iterations', 500, 3000),
         'learning_rate': trial.suggest_float('learning_rate', 0.01, 0.1, log=True),
         'depth': trial.suggest_int('depth', 4, 10),
         'l2_leaf_reg': trial.suggest_float('l2_leaf_reg', 0.1, 5, log=True),

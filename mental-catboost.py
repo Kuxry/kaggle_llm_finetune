@@ -54,16 +54,16 @@ features.append('Age_binned')
 catboost_params = {
     'loss_function': 'Logloss',
     'eval_metric': 'AUC',
-    'learning_rate':0.05717731252821768,
-    'iterations': 1339,
+    'learning_rate': 0.04376829499327924,
+    'iterations': 1969,
     'depth': 4,
-    'random_strength':0.7219379325298366,
-    'l2_leaf_reg': 0.8834758662376494,
+    'random_strength': 0.364064777020393,
+    'l2_leaf_reg': 0.8531241006980368,
     'random_seed': 42,
     'verbose': False,
     'task_type': 'GPU',
-    'bagging_temperature': 0.29587141149836876,
-    'border_count': 214
+    'bagging_temperature': 0.322482569833387,
+    'border_count': 115
 }
 
 # 计算 Overall Train ACCURACY
@@ -116,14 +116,3 @@ output = pd.DataFrame({
 # 保存预测结果
 output.to_csv('submission.csv', index=False)
 print("预测结果已保存到 submission.csv")
-
-Value(OOF
-Accuracy): 0.9401847903340441
-Params:
-iterations: 1464
-learning_rate: 0.046363075358980196
-depth: 4
-l2_leaf_reg: 0.6234380238150427
-random_strength: 0.267187557966503
-bagging_temperature: 0.29933307276998755
-border_count: 41
